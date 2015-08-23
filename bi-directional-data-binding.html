@@ -1,0 +1,14 @@
+<!doctype html>
+<html ng-app>
+    <head>
+        <script src="lib/js/angular-1.0.1.js"></script>
+    </head>
+    <body>
+    	<!-- 文本输入指令<input ng-model="yourname" />绑定到一个叫yourname的模型变量。 -->
+        Your name: <input type="text" ng-model="yourname" placeholder="World">
+        <hr>
+        <!-- 双大括号标记将yourname模型变量添加到问候语文本。你不需要为该应用另外注册一个事件侦听器或添加事件处理程序！ -->
+        Hello {{yourname || 'World'}}!
+        <!-- 这就是AngularJS双向数据绑定的概念。 输入框的任何更改会立即反映到模型变量（一个方向），模型变量的任何更改都会立即反映到问候语文本中（另一方向）。 -->
+    </body>
+</html>
